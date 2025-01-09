@@ -1,0 +1,1156 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+*{
+	box-sizing:border-box;  
+  }
+  
+:root {
+	--color-text: rgb(11, 11, 11);
+	--color-background: whitesmoke;
+	--color-footer: #e7e7e7;
+	--color-button: #C6313C;
+	--color-active: #8e2129;
+	--gradient: linear-gradient(90deg, rgb(255, 204, 0) 40%, rgb(255, 245, 204) 100%);
+	--font-heading: 'Passion One', sans-serif;
+	--font-body: montserrat, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+Body{
+	margin:0em;
+	background-color: var(--color-background);
+	font-family: var(--body-text);
+	font-weight: 300;
+	line-height: 1.8em;
+}
+
+h1{
+	font-family: var(--body-text);
+	font-weight: 200;
+	text-transform: uppercase;
+	line-height: 1em;
+	font-size:1.2em;
+	color:var(--color-background);
+}
+
+h2{
+	margin-top: 0.5em;
+	font-family: var(--heading-text);
+	font-weight: 800;
+	text-transform: uppercase;
+    line-height: 1;
+	font-size:2em;
+	color:var(--color-background);
+}
+
+h3{
+	margin:0em;
+	font-family: var(--body-text);
+	font-weight: 600;
+	font-size: 1em;
+}
+
+
+/* Focus state algemeen*/
+a:focus, summary:focus, button:focus, input:focus{
+	outline-color:var(--color-button);
+}
+
+form fieldset button{
+	outline-color: #f7ce46;
+}
+
+
+
+
+/************/
+/* HEADER*/
+/************/
+header nav{
+	width: 100%;
+	padding: 0em 1em 0em 1em;
+	font-family: var(--heading-text);
+	position: fixed;
+	z-index: 1;
+}
+
+header nav img{
+	margin-top:0.2em;
+	width: 0.8em;
+}
+
+header nav .logo{
+	margin:0.5em;
+	width: 11em;
+}
+
+header nav{
+	display:flex;
+	justify-content: space-between;
+	background: var(--gradient);
+	color:var(--color-text);
+}
+
+header nav .mainMenu{
+	margin:0em;
+	display: flex;
+	list-style: none;
+}
+
+header nav .mainMenu li a{
+	padding: 0.95em 1em 0.95em 1em;
+	display: inline-block;
+	align-items:center;
+	text-decoration: none;
+	font-size: 1.2em;
+	color:var(--color-text);
+}
+
+header nav .mainMenu li a:hover{
+	background: var(--color-button);
+	color:var(--color-footer);
+	transition: 0.2s ease-in-out;
+}
+
+header nav .mainMenu li a:active{
+	background: var(--color-active);
+}
+
+header nav .openMenu{
+	margin:20px;
+	font-size: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
+header nav .mainMenu .closeMenu{
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+
+
+
+/***********/
+/* FOOTER*/
+/***********/
+footer{
+	background-color: var(--color-footer);
+}
+
+footer section li{
+	list-style: none;
+}
+
+footer section details{
+	cursor: pointer;
+	padding: 0.5em 0em 0.5em 0em;
+	transition: 0.2s ease-in-out;
+}
+
+footer section details:hover{
+	background-color: rgb(213, 213, 213);
+	color: var(--color-button);
+}
+
+footer section details summary{
+	padding: 1.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1.2em;
+	text-align: left;
+	transition: 0.2s ease-in-out;
+}
+
+footer section details summary:hover{
+	text-decoration: underline;
+}
+
+footer section details summary img{
+	width: 2em;
+}
+
+footer section details a{
+	padding: 0.5em 1.2em 0.5em 1.2em;
+	display: flex;
+	font-family: var(--body-text);
+	text-decoration: underline;
+	color: var(--color-text);
+	cursor: pointer;
+}
+
+footer section details a:hover{
+	text-decoration: underline;
+	color:var(--color-button);
+}
+
+
+/* Cookievoorkeuren button*/
+button{
+	margin-left: 1em;
+	padding: 0.5em;
+	background: none;
+	font-size: 0.8em;
+	font-family: var(--body-text);
+	font-weight: 300;
+	border:none;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+}
+
+button:hover{
+	font-weight: 600;
+	color: var(--color-button);
+	transform: scale(1.05); 
+}
+
+
+/* Social media buttons*/
+footer section nav:nth-of-type(2){
+	padding: 0em 2em 0em 0.8em;
+}
+
+footer section nav:nth-of-type(2) ul{
+	margin: 0em;
+	padding:0.5em;
+	padding-left: 0em;
+	display: flex;
+	gap:0.2em;
+	animation: bounce;
+}
+
+footer section nav:nth-of-type(2) img{
+	width: 1em;
+}
+
+
+/* Onderste gedeelte footer met gradient*/
+footer section:nth-of-type(2){
+	padding: 0em 2em 0em 2em;
+	background: var(--gradient-background);
+	background: var(--gradient);
+}
+
+footer section:nth-of-type(2) p{
+	padding-bottom: 0em;
+	font-size: 0.8em;
+}
+
+footer section:nth-of-type(2) a img{
+	width: 10em;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+footer section:nth-of-type(2) section{
+	margin-top: -2em;
+	padding-top: 0em;
+	padding-bottom: 2em;
+}
+
+footer section:nth-of-type(2) section a img:first-of-type{
+	width: 8em;
+	padding-left: 0em;
+	padding-right: 1em;
+}
+
+
+/**********************/
+/* STYLING PAGINA 1*/
+/**********************/
+
+/* CONTENT SECTIE 1*/
+main section:first-of-type{
+	padding:2em;
+	padding-top:5em;
+	background-image: url('../images/pagina-1/bus-overlay.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main section:first-of-type a{
+	width: 100%;
+	padding:0.7em 1em 0.7em 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	text-decoration: none;
+	line-height: 1em;
+}
+
+main section:first-of-type a:hover{
+	background-color: var(--color-button);
+	color:var(--color-footer);
+	transition: 0.2s ease-in-out;
+	transform: scale(1.05); 
+}
+
+main section:first-of-type a:active{
+	background-color: var(--color-active);
+}
+
+main section:first-of-type a img{
+	width: 4.5em;
+}
+
+main section:first-of-type a section{
+	width: 65%;
+	padding:0.2em;
+	background-image: none;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main section:first-of-type a section img{
+	width: 3em;
+}
+
+
+/* CONTENT SECTIE 2-4-5-6*/
+main section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6){
+	margin-top: 7em;
+	padding: 0em 2em 0em 2em;
+}
+
+main section:nth-of-type(2) h1, main section:nth-of-type(4) h2, main section:nth-of-type(5) h2, main section:nth-of-type(6) h2{
+	font-family: var(--heading-text);
+	font-size:2em;
+	color: var(--color-text);
+}
+
+main section:nth-of-type(4) h1, main section:nth-of-type(5) h1, main section:nth-of-type(6) h1, #trackandTrace main section:nth-of-type(4) h1{
+	font-family: var(--body-text);
+	color:var(--color-text);
+}
+
+main section:nth-of-type(2) a:first-of-type img, main section:nth-of-type(3) a:first-of-type img, main section:nth-of-type(4) a:first-of-type img, main section:nth-of-type(5) a:first-of-type img, main section:nth-of-type(6) a:first-of-type img{
+	width: 100%;
+	text-align: center;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) a, main section:nth-of-type(3) div:nth-of-type(2) a, main section:nth-of-type(4) div a, main section:nth-of-type(5) div:first-of-type a, main section:nth-of-type(6) div:nth-of-type(2) a, #trackandTrace main section:nth-of-type(5) a, #trackandTrace main section:nth-of-type(4) div:nth-of-type(2) a{
+	width: max-content;
+	padding-left: 0em;
+	display: flex;
+	align-items: center;
+	font-family: var(--body-text);
+	font-weight: 600;
+	font-size: 1em;
+	color:var(--color-text);
+	text-decoration: none;
+	line-height: 1em; 
+	transition: 0.2s ease-in-out;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) a:hover, main section:nth-of-type(3) div:nth-of-type(2) a:hover, main section:nth-of-type(4) div:first-of-type a:hover, main section:nth-of-type(5) div:first-of-type a:hover, main section:nth-of-type(6) div:nth-of-type(2) a:hover, #trackandTrace main section:nth-of-type(5) a:hover, #trackandTrace main section:nth-of-type(4) a:hover{
+	transform: scale(1.05); 
+	color:var(--color-button);
+	text-decoration: underline;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) a:active, main section:nth-of-type(3) div:nth-of-type(2) a:active, main section:nth-of-type(4) div:first-of-type a:active, main section:nth-of-type(5) div:first-of-type a:active, main section:nth-of-type(6) div:nth-of-type(2) a:active, #trackandTrace main section:nth-of-type(5) a:active, #trackandTrace main section:nth-of-type(4) a:active{
+	color:var(--color-active);
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) a img, main section:nth-of-type(3) a:first-of-type img, main section:nth-of-type(4) div:first-of-type a img, main section:nth-of-type(5) div:first-of-type a img, main section:nth-of-type(6) div:nth-of-type(2) a img{
+	width: 3em;
+	margin-left:-0.5em;
+}
+
+
+/* CONTENT SECTIE 3*/
+main section:nth-of-type(3){
+	padding: 4em 2em 4em 2em;
+	background-image: url('../images/pagina-1/oranje.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main section:nth-of-type(3) h2, main section:nth-of-type(3) p, main section:nth-of-type(3) a{
+	color:var(--color-background);
+}
+
+main section:nth-of-type(3) a img{
+	width: 3em;
+	margin-left:-0.5em;
+}
+
+main section:nth-of-type(3) a{
+	width: max-content;
+	padding-left: 0em;
+	display: flex;
+	align-items: center;
+	font-family: var(--body-text);
+	font-weight: 600;
+	font-size: 1em;
+	text-decoration: none;
+	color:var(--color-background);
+	transition: 0.2s ease-in-out;
+}
+
+main section:nth-of-type(3) a:hover{
+	color:var(--color-button);
+	text-decoration: underline;
+	transform: scale(1.05); 
+}
+
+main section:nth-of-type(3) a:active{
+	color:var(--color-active);
+}
+
+
+/* CONTENT SECTIE 4-5-6*/
+main section:nth-of-type(4) h3, main section:nth-of-type(5) h3, main section:nth-of-type(6) h3{
+	color:var(--color-text);
+}
+
+
+/* CONTENT SECTIE 6*/
+main section:nth-of-type(6){
+	padding-bottom:4em;
+}
+
+
+/* STICKY KNOP*/
+main > a{
+	width: max-content;
+	padding-right:1em;
+	height: 3.5em;
+	position: fixed;
+	bottom: 2em;
+	right: 1em;
+	display: flex;
+	align-items: center;
+	background-color: var(--color-button);
+	color:var(--color-background);
+	font-family: var(--body-text);
+	font-weight: 600;
+	font-size: 0.9em;
+	text-decoration: none;
+	border-radius: 5em;
+	box-shadow: 1px 3px 5px var(--color-text);
+	transition: 0.2s ease-in-out;
+}
+
+main > a:hover{
+	background-color: var(--color-footer);
+	color:var(--color-button);
+	transform: scale(1.05); 
+}
+
+main > a:active{
+	background-color: rgb(204, 140, 140);
+}
+
+main > a img{
+	width: 3em;
+}
+
+
+
+
+/**********************/
+/* STYLING PAGINA 2*/
+/**********************/
+
+/* CONTENT SECTIE 1*/
+#trackandTrace main section:first-of-type{
+	padding:2em;
+	padding-top:5em;
+	background-image: url('../images/pagina-1/strandhuisOverlay.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* Formulier 1*/
+main section:first-of-type form{
+	padding: 2em;
+	background-color: var(--color-background);
+}
+
+main section:first-of-type form img{
+	width: 6em;
+}
+
+main section:first-of-type form h4{
+	margin-top: 0.5em;
+	font-family: var(--heading-text);
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+main section:first-of-type form p{
+	margin-top: 0.2em;
+	margin-bottom: 1.5em;
+}
+
+label{
+	font-family: var(--heading-text);
+	font-weight: 100;
+    line-height: 1;
+	color: var(--color-text);
+	cursor: pointer;
+}
+
+form:invalid {
+	background: rgba(212, 196, 19, 0.385);
+}
+
+fieldset {
+	border:none;
+	transition: all .2s;
+	padding:1em;
+}
+
+fieldset:valid p:nth-of-type(2) {
+	display:block;
+	color: black;
+	background:rgb(247,206,70);
+	border:seagreen 18px;
+	padding:1em 1em 1em 1em;
+	font-family: var(--body-text);
+	font-size: 1em;
+	line-height: 1em;
+}
+
+fieldset:invalid {
+    background: none;
+}
+
+fieldset:invalid p:nth-of-type(2){
+	display:none;
+}
+  
+main section:first-of-type form fieldset input:first-of-type, main section:first-of-type form fieldset input:nth-of-type(2) {
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 0.5em 0em 0.5em 0.5em;
+	background-color: rgb(237, 237, 237);
+	font-family: var(--body-text);
+	font-weight: 100;
+	font-size: 0.9em;
+	transition:all .2s;
+	z-index:2;
+}
+
+input:valid {
+	border-color:seaGreen;
+	background-color: rgb(12, 190, 27);
+} 
+
+input:invalid {
+	border-color:#f6c430;
+}
+
+input:focus {
+	transform: scale(1.01, 1.01);
+}
+
+input:focus + p.tooltip {
+	display:block;
+	opacity:1;
+	margin-top:-1.3em;
+}
+
+main section:first-of-type form button{
+	width: 100%;
+	margin:1em 0em 0em 0em;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: var(--color-button);
+	border-color:var(--color-button);
+	color:var(--color-footer);
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1.2em;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 0.15em;
+	cursor: pointer;
+}
+
+main section:first-of-type form button:hover{
+	background-color: var(--color-footer);
+	border-color:var(--color-button);
+	color:var(--color-button);
+}
+
+main section:first-of-type form button:active{
+	background-color: rgb(204, 140, 140);
+}
+
+
+/* CONTENT SECTIE 2*/
+#trackandTrace main section:nth-of-type(2){
+	margin-top: 4em;
+}
+
+#trackandTrace main section:nth-of-type(2) h3{
+	color: black;
+}
+
+#trackandTrace main section:nth-of-type(2) div, #trackandTrace main section:nth-of-type(5) div {
+	width: 50%;
+	margin-top:2em;
+	margin-bottom: 2em;
+	margin-left: 0.5em;
+	border-right: 0.1em solid black;
+	height: 3em;
+}
+
+#trackandTrace main section:nth-of-type(2) h1, #trackandTrace main section:nth-of-type(3) h1{
+	font-family: var(--body-text);
+	font-size:1.2em;
+	color:var(--color-text);
+}
+
+#trackandTrace main section:nth-of-type(2) h2{
+	margin: 0em 0em 0em 0em;
+	font-family: var(--heading-text);
+	font-size:2em;
+	color:var(--color-text);
+}
+
+#trackandTrace main section:nth-of-type(4) h1, #trackandTrace main section:nth-of-type(5) h1{
+	margin-top:1.2em;
+	font-family: var(--heading-text);
+	font-size:2em;
+	color:var(--color-text);
+}
+
+
+/* CONTENT SECTIE 3 + 4*/
+#trackandTrace main section:nth-of-type(3){
+	background-image: none;
+	background-color:#f7ce46;
+}
+
+#trackandTrace main section:nth-of-type(3) div:first-of-type img, #trackandTrace main section:nth-of-type(3) div:first-of-type a, #trackandTrace main section:nth-of-type(4) div:first-of-type img{
+	width: 100%;
+}
+
+#trackandTrace main section:nth-of-type(3) div:nth-of-type(2) h2, #trackandTrace main section:nth-of-type(3) div:nth-of-type(2) h3, #trackandTrace main section:nth-of-type(3) div:nth-of-type(2) p{
+	color:black;
+}
+
+#trackandTrace main section:nth-of-type(3) div:nth-of-type(2) a img, #trackandTrace main section:nth-of-type(4) div:nth-of-type(2) a img{
+	width: 3em;
+}
+
+#trackandTrace main section:nth-of-type(4) div a{
+	width: 100%;
+}
+
+
+/* CONTENT SECTIE 5*/
+#trackandTrace main section:nth-of-type(5){
+	margin-bottom:5em;
+}
+
+#trackandTrace main section:nth-of-type(5) details{
+	width: 100%;
+	margin:0em;
+	padding: 0.5em 0em 0.5em 0em;
+	background-color: var(--color-footer);
+	transition: 0.2s ease-in-out;
+}
+
+#trackandTrace main section:nth-of-type(5) details:hover{
+	background-color: rgb(213, 213, 213);
+	color: var(--color-button);
+}
+
+#trackandTrace main section:nth-of-type(5) details summary{
+	padding: 1.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1.2em;
+	text-align: left;
+	line-height: 1.2em;
+	list-style-type: none;
+	transition: 0.2s ease-in-out;
+}
+
+#trackandTrace main section:nth-of-type(5) details summary:hover{
+	text-decoration: underline;
+}
+
+#trackandTrace main section:nth-of-type(5) details p{
+	padding: 0em 1.2em 0em 1.2em;
+	font-family: var(--body-text);
+	font-weight: 100;
+	text-decoration: none;
+	color: black;
+}
+
+#trackandTrace main section:nth-of-type(5) details p a{
+	width: auto;
+	font-family: var(--body-text);
+	font-weight: 300;
+	display: inline-block;
+	text-decoration: none;
+	color: var(--color-button);
+	transform: none; 
+}
+
+#trackandTrace main section:nth-of-type(5) details p a:hover{
+	display: inline-block;
+	text-decoration: underline;
+	transform: none; 
+}
+
+#trackandTrace main section:nth-of-type(5) details p a:active{
+	color:var(--color-active);
+}
+
+#trackandTrace main section:nth-of-type(5) details summary img{
+	width: 2em;
+}
+
+#trackandTrace main section:nth-of-type(5) > a, #trackandTrace main section:nth-of-type(5) details a:nth-of-type(2), #trackandTrace main section:nth-of-type(5) details a:nth-of-type(3) {
+	margin-top: 0.5em;
+}
+
+#trackandTrace main section:nth-of-type(5) > a img, #trackandTrace main section:nth-of-type(5) details:nth-of-type(2) a img, #trackandTrace main section:nth-of-type(5) details:nth-of-type(2) a img{
+	width: 3em;
+}
+
+#trackandTrace main section:nth-of-type(5) > a img, #trackandTrace main section:nth-of-type(5) details:nth-of-type(2) a img{
+	margin-left:0.8em;
+}
+
+
+
+
+/**********************/
+/* Responsiveness*/
+/**********************/
+@media(max-width: 740px){
+	header nav .mainMenu {
+		top:0;
+		right:0;
+		left:0;
+		height: 45vh;
+		position: fixed;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		background: rgb(232, 232, 232);
+		transition: top 1s ease;
+		display: none;
+	}
+
+	header nav .mainMenu .closeMenu{
+		display: block;
+		position: absolute;
+		top:15px;
+		right:40px;
+	}
+
+	header nav .openMenu{
+		display: block;
+		transition: 0.2s ease-in-out;
+		margin-top:0.4em;
+		margin-bottom:0.4em;
+		padding:0em;
+	}
+
+	header nav .mainMenu li a{
+		padding:1em;
+	}
+
+	header nav .mainMenu li a:hover{
+		background: none;
+		color:var(--color-button);
+		transition: 0.2s ease-in-out;
+		text-decoration: underline;
+	}
+
+	header nav .mainMenu li a:active{
+		color:var(--color-active);
+	}
+}
+
+
+@media(min-width: 741px){
+	main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+
+	/* Section 1 + 2 + 3 + 6*/
+	main section:first-of-type, main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(6),#trackandTrace main section:first-of-type, #trackandTrace main section:nth-of-type(3), #trackandTrace main section:nth-of-type(4), #trackandTrace main section:nth-of-type(5){
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	main section:first-of-type, main section:nth-of-type(2), main section:nth-of-type(6), #trackandTrace main section:nth-of-type(3), #trackandTrace main section:nth-of-type(4){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2em;
+	}
+
+	#trackandTrace main section:nth-of-type(2){
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 2em;
+	}
+
+	main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(6){
+		margin:2em 3em 2em 3em;
+	}
+
+
+	/* Section 1*/
+	main section:first-of-type div{
+		padding:1.5em;
+	}
+
+	main section:first-of-type div:first-of-type{
+		padding-top:7em;
+	}
+
+	main section:first-of-type div:nth-of-type(2){
+		width: 100%;
+	}
+
+	main section:first-of-type div h1{
+		margin-top: 0.5em;
+		font-size: 1.5em;
+		line-height: 1em;
+	}
+
+	main section:first-of-type div h2{
+		font-size: 2.5em;
+	}
+
+	main section:first-of-type div:nth-of-type(2) a{
+		padding:1.5em;
+	}
+
+	/* Section 2*/
+	main section:nth-of-type(2){
+		margin:6em 2em 4em 2em;
+	}
+
+	#trackandTrace main section:nth-of-type(2){
+		padding:0em 2em 0em 2em;
+	}
+
+
+	/* Section 3*/
+	main section:nth-of-type(3) p{
+		width: 55%;
+	}
+
+	#trackandTrace main section:nth-of-type(3) p{
+		width: 90%;
+	}
+
+	#trackandTrace main section:nth-of-type(3) div:first-of-type img{
+		margin-top: 5em;
+	}
+
+
+	/* Section 4 + 5*/
+	main section:nth-of-type(4){
+		margin:2em 0em 2em 3em;
+		padding:2em;
+		background-color: rgb(235, 235, 235);
+	}
+
+	main section:nth-of-type(5){
+		margin:2em 3em 2em 0em;
+		padding:2em;
+		background-color: rgb(225, 225, 225);
+	}
+
+	#trackandTrace main section:nth-of-type(4){
+		margin:3em;
+		background-color: rgb(235, 235, 235);
+	}
+
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		padding-right:1em;
+	}
+
+	#trackandTrace main section:nth-of-type(4) div:first-of-type a img{
+		margin-top:5em;
+	}
+
+	#trackandTrace main section:nth-of-type(5){
+		margin:0em 3em 0em 3em;
+		background: none;
+	}
+
+
+	/* Section 6*/
+	main section:nth-of-type(6){
+		margin:2em 3em 4em 3em;
+		padding:2em 2em 3em 2em;
+		background-color: #facc36;
+	}
+
+	main section:nth-of-type(6) div:first-of-type{
+		padding-top:6em;
+	}
+}
+
+
+@media(min-width: 1050px){
+	/* Section 1*/
+	main section:first-of-type div:nth-of-type(2){
+		width: 90%;
+	}
+
+	/* Section 2*/
+	main section:nth-of-type(2) div:nth-of-type(2){
+		margin:3em 2em 4em 2em;
+	}
+
+	#trackandTrace main section:nth-of-type(2){
+		padding:0em 6em 0em 6em;
+	}
+
+	/* Section 3*/
+	#trackandTrace main section:nth-of-type(3) div:first-of-type img{
+		margin-top: 0em;
+		width: 100%;
+	}
+
+	#trackandTrace main section:nth-of-type(3) div:first-of-type img{
+		margin-top: 2em;
+	}
+
+	/* Section 4*/
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		margin-top:1em;
+		padding-right:3em;
+	}
+
+	/* Section 6*/
+	main section:nth-of-type(6) div:nth-of-type(2){
+		margin:4em 2em 4em 2em;
+	}
+}
+
+
+@media(min-width: 1370px){
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		margin-top:3em;
+		padding-right:3em;
+	}
+}
+
+
+@media(min-width: 1430px){
+	/* Section 1*/
+	main section:first-of-type div:nth-of-type(2){
+		width: 80%;
+	}
+
+	/* Section 2*/
+	main section:nth-of-type(2) div:nth-of-type(2){
+		margin:5em 2em 4em 2em;
+	}
+
+	#trackandTrace main section:nth-of-type(2){
+		padding:0em 12em 0em 12em;
+	}
+
+	/* Section 3*/
+	#trackandTrace main section:nth-of-type(3) div:first-of-type img{
+		margin-top: 0em;
+	}
+
+	/* Section 4*/
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		margin-top:6em;
+		padding-right:6em;
+	}
+
+	/* Section 6*/
+	main section:nth-of-type(6) div:nth-of-type(2){
+		margin:6em 2em 4em 2em;
+	}
+}
+
+
+@media(min-width: 1700px){
+	/* Section 1*/
+	main section:first-of-type div:nth-of-type(2){
+		width: 70%;
+	}
+
+	/* Section 2*/
+	#trackandTrace main section:nth-of-type(2){
+		padding:0em 18em 0em 18em;
+	}
+
+	main section:nth-of-type(2) div:nth-of-type(2){
+		margin:7em 2em 4em 2em;
+	}
+
+	/* Section 4*/
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		margin-top:8em;
+		padding-right:10em;
+	}
+
+	/* Section 6*/
+	main section:nth-of-type(6) div:nth-of-type(2){
+		margin:8em 2em 4em 2em;
+	}
+}
+
+
+@media (prefers-color-scheme:dark) {
+	:root {
+		--color-button: #C6313C;
+		--gradient-background: rgb(247,206,70);
+		--gradient:rgb(19, 19, 19);
+	}
+
+	body{
+		background-color: rgb(209, 209, 209);
+	}
+
+	header nav .mainMenu li a{
+		color:var(--color-button);
+	}
+
+	main section:first-of-type a, main section:first-of-type form{
+		background-color: rgb(98, 98, 98);;
+		color: whitesmoke;
+	}
+	
+	main section:first-of-type a:hover{
+		background-color: var(--color-button);
+		color:var(--color-footer);
+	}
+
+	#trackandTrace main section:first-of-type div:nth-of-type(2) form label{
+		color:whitesmoke;
+	}
+
+	main section:nth-of-type(4), #trackandTrace main section:nth-of-type(4){
+		background-color: rgb(183, 183, 183);
+	}
+
+	main section:nth-of-type(5){
+		background-color: rgb(163, 163, 163);
+	}
+
+	footer, #trackandTrace main section:nth-of-type(5) details{
+		background-color: rgb(132, 132, 132);
+	}
+
+	#trackandTrace footer details:hover, #trackandTrace main section:nth-of-type(5) details:hover{
+		background-color: rgb(194, 194, 194);
+	}
+
+	footer section > p{
+		color:whitesmoke;
+	}
+  }
+
+
+
+
+/***************/
+/* Animaties*/
+/***************/
+/* Animatie van het scroll-in effect*/
+.hidden{
+	opacity: 0;
+	transform:translateY(20%);
+	transition: all 3s;
+  }
+
+.show{
+	opacity: 1;
+	transform:translateY(0);
+
+  }
+
+/* Zorgt ervoor dat mensen de animatie uit kunnen zetten*/
+@media(prefers-reduced-motion){
+	.hidden{
+	transition: none;
+	}
+}
+
+  
+/* Animatie op de icons in de footer*/
+footer section nav:nth-of-type(2) ul li img:hover, main > a:hover {
+	animation-name:bounce-animation;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+@keyframes bounce-animation {
+	0% {
+	  transform:scale(1);
+	}
+	50% {
+	  transform:scale(2);
+	}
+	100% {
+	  transform:scale(1);
+	}
+}
+
+
+/* Animatie op de dowload button*/
+main > a:hover {
+	animation-name:big-animation;
+	animation-duration:1s;
+	animation-iteration-count:10;
+	
+}
+
+@keyframes big-animation {
+	0% {
+	  transform:scale(1);
+	}
+	20% {
+	  transform:scale(1.1);
+	}
+
+	40% {
+		transform:scale(1);
+	}
+
+	60% {
+		transform:scale(1.1);
+	}
+
+	80% {
+		transform:scale(1);
+	}
+
+	90% {
+	  transform:scale(1.1);
+	}
+
+	100% {
+		transform:scale(1);
+	  }
+}
