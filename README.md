@@ -1,16 +1,5 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+# Procesverslag Carmen Brands
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
-
-## Jij
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
@@ -38,11 +27,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.dhlecommerce.nl/nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home pagina
   <img src="readmeimages/dhlhomepagina.svg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Track en Trace pagina
   <img src="readmeimages/dhltrackentrace.svg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -54,8 +43,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+  ### Toegankelijkheidstest
+  <img src="readmeimages/test1blad1.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test1blad2.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test1blad3.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test1blad4.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test1blad5.jpg" width="375px" alt="toegankelijkheidstest">
+  
+
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  1. ze maken geen gebruik van darkmode 
+  2. met de screenreader worden knoppen als afbeelding geroepen.
+  3. geen logische volgorde met de heading levels
 
 </details>
 
@@ -87,26 +86,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ik heb de eerste 2 html pagina's gemaakt zodat ik die goed kan neerzetten voordat ik met de css begin wel. dus ik wil met het gesprek nakijken of de html goed is neergezet zodat ik verder kan. En ik ben bezig geweest met de afbeeldingen te verzamelen
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  ik heb hier een gesprek met sybren gehad.
+  hij had een aantal dingetjes over mijn html en dat waren de volgende;
+  1. geen div's gebruiken je kan ze vervangen voor articles
+  2. 1 h1 per pagina de rest oplopend doen
+  3. geen n2e nav in de footer
+  4. afbeeldingen invoegen
+
+  na dit gesprek zaten er dus wat fouten in de html dus die moeten aangepast worden en dan kan ik beginnen aan de css
 
 </details>
 
@@ -120,26 +113,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier heb ik de html verbeterd en ben ik begonnen aan de css hier had ik wel wat moeite mee. Daarom heb ik wat meer tijd gestoken in het onderzoeken naar hoe ik de css kan neerzetten en hoe het allemaal werkt ik ben hier voornamlijk met w3school mee bezig geweest. en ik had besloten om een paar kopjes uit de html weg te laten omdat ik al genoeg moeite heb met de css en het responsive te krijgen dat ik daar al genoeg tijd aan kwijt ben
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  hier heb ik een gesprek gehad met sybren.
+  ik heb hem mijn html laten nakijken op de verbeter punten daar had hij nog 1 puntje op en dat was een li toevoegen en dat heb ik gedaan. Daarnaast had ik een vraagje over mijn footer want ik wou weten hoe ik de extra opsommingstekens weg kreeg en daar heeft hij een code pen van gestuurd zodat ik daar naar kon kijken en toe passen ik kreeg het advies om we echt de focus te leggen op de css want daar liep ik wat in achter en dat ik optijd om hulp moet vragen wanneer het niet lukt met het hamburger menu.
 
 </details>
 
@@ -152,8 +135,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
+  ### Toegankelijkheidstest
+  <img src="readmeimages/test2blad1.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test2blad2.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test2blad3.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test2blad4.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test2blad5.jpg" width="375px" alt="toegankelijkheidstest">
+
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  1. Bekijk meer' word gezegd op knoppen, terwijl er iets anders staat.
+  2. Afbeeldingen moeten duidelijker worden wat slaat op de tekst ernaast.
+  3. de html had een paar warnings maar dat zijn punten die ze aangeven om te vervagen voor divs dus daar moet ik nog naar kijken
+  4. de headings lopen nu wel logisch
 
 </details>
 
@@ -163,30 +156,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Deze periode was catastrofe ik had in de vakatie wat aan de css en html gedaan maar ik heb er ergens een fout in gekregen waardoor niks er meer uitzag zoals het moest en ik heb hier echt uren naar zitten zoeken wat het nou uiteindelijk kon zijn. en ik kon het gewoon niet vinden. maar daarvoor was ik er wel redelijk tevreden mee en was het hamburger menu werkend
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb hier een gesprek met chris gehad.
+  hij heeft geholpen met zoeken waar de fout en en uiteindelijk was het dus een fout in mijn html die ik was vergeten ik had een section toegevoegd maar die totaal niet meegenomen in de css. Daarnaast had ik met Chris doorgesproken dat ik mijn proces verslag moet bijwerken en de volledige focus moet leggen op het responsive maken. Daarnaast moet ik ook comfortabel worden met de code zodat ik het meer eigen maak en kan uitleggen waarom ik het heb gedaan.
 
 </details>
 
@@ -200,19 +180,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Home pagina
+  <img src="readmeimages/dhlhomepaginaeind.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readmeimages/dhlhomepaginaeindweb.jpg" width="375px" alt="omschrijving van de pagina">
+
+  #### Screenshot(s) van de tweede pagina :
+  Track en Trace pagina
+  <img src="readmeimages/dhltrackentraceeind.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readmeimages/dhltrackentraceeindweb.jpg" width="375px" alt="omschrijving van de pagina">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd op de code meer eigen te maken doordat ik wat meer tijd heb geinvesteerd naar te kijken wat alles betekend en wat het doet daarnaast was ik erg blij met het hamburger menu dat die gelukt is met de hulp van een video
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readmeimages/hamburgermenu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  op de website van dhl zelf zit er in de footer een soort vouw menu die zodra hij kleiner wordt een dropdown menu krijgt ik heb gekeken hoe dit moest en ook gevraagd maar ik had er niet voldoende tijd voor om deze goed te krijgen dus heb ik heb gelaten zoals dat ik hem had 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readmeimages/mijnsite1" width="375px" alt="bummer">
+  <img src="readmeimages/mijnsite2" width="375px" alt="bummer">
+  <img src="readmeimages/dhlsite1" width="375px" alt="bummer">
+  <img src="readmeimages/dhlsite2" width="375px" alt="bummer">
 </details>
 
 
@@ -228,8 +219,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Video over hoe een hamburger menu werkt (had hier met de opdrachten nog moeite mee en moest dit 'live' even zien om het goed te begrijpen): https://www.youtube.com/watch?v=1iS0r238G4g
+  2. Video over hoe ik een scroll in effect met javascript kon toepassen: https://www.youtube.com/watch?v=T33NN_pPeNI
+  3. ik heb hulp gehad van Quinesha van Burgh zij heeft onderdelen uitgelegd zodat ik het beter begreep
+  4. om de code meer te begrijpen met wat het betekend en wat het doet heb ik veel geexperimenteerd met https://www.w3schools.com
 
 </details>
