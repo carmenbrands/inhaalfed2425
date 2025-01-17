@@ -65,8 +65,6 @@
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readmeimages/breakdownpagina1.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -200,10 +198,10 @@
   ### Dit was lastig/Is niet gelukt:
   op de website van dhl zelf zit er in de footer een soort vouw menu die zodra hij kleiner wordt een dropdown menu krijgt ik heb gekeken hoe dit moest en ook gevraagd maar ik had er niet voldoende tijd voor om deze goed te krijgen dus heb ik heb gelaten zoals dat ik hem had 
 
-  <img src="readmeimages/mijnsite1" width="375px" alt="bummer">
-  <img src="readmeimages/mijnsite2" width="375px" alt="bummer">
-  <img src="readmeimages/dhlsite1" width="375px" alt="bummer">
-  <img src="readmeimages/dhlsite2" width="375px" alt="bummer">
+  <img src="readmeimages/mijnsite1.png" width="375px" alt="bummer">
+  <img src="readmeimages/mijnsite2.png" width="375px" alt="bummer">
+  <img src="readmeimages/dhlsite1.png" width="375px" alt="bummer">
+  <img src="readmeimages/dhlsite2.png" width="375px" alt="bummer">
 </details>
 
 
