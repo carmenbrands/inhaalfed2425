@@ -44,7 +44,7 @@
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Toegankelijkheidstest
-  <img src="readmeimages/test1blad1.jpg" width="375px" alt="toegankelijkheidstest">
+  <img src="readmeimages/test1blad1.png" width="375px" alt="toegankelijkheidstest">
   <img src="readmeimages/test1blad2.jpg" width="375px" alt="toegankelijkheidstest">
   <img src="readmeimages/test1blad3.jpg" width="375px" alt="toegankelijkheidstest">
   <img src="readmeimages/test1blad4.jpg" width="375px" alt="toegankelijkheidstest">
