@@ -179,13 +179,13 @@
 
   ### Je uitkomst - karakteristiek screenshots:
   Home pagina
-  <img src="readmeimages/dhlhomepaginaeind.svg" width="375px" alt="omschrijving van de pagina">
+  <img src="readmeimages/dhlhomepaginaeindmobiel.jpg" width="375px" alt="omschrijving van de pagina">
   <img src="readmeimages/dhlhomepaginaeindweb.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina :
   Track en Trace pagina
-  <img src="readmeimages/dhltrackentraceeind.svg" width="375px" alt="omschrijving van de pagina">
-  <img src="readmeimages/dhltrackentraceeindweb.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readmeimages/dhltrackentracepaginaeindmobiel.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readmeimages/dhltenteindweb.jpg" width="375px" alt="omschrijving van de pagina">
 
 
 
