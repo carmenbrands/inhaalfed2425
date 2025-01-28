@@ -1,0 +1,338 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"); 
+
+* {
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  max-width: 100%;
+}
+
+:root {
+  --color-text: rgb(11, 11, 11);
+  --color-text2: #ffffff;
+  --color-background: rgb(255, 255, 255);
+  --color-footer: #e7e7e7;
+  --color-button: #c6313c;
+  --color-active: #8e2129;
+  --gradient: linear-gradient(90deg, rgb(255, 204, 0) 40%, rgb(255, 245, 204) 100%);
+  --font-heading: "Passion One", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.8em;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: calc(2.5vw + 1.5rem); /* Verklein de grootte van de tekst */
+  color: white;
+  word-wrap: break-word;
+  margin: 0 auto;
+  line-height: 1;
+  font-weight: bold; /* Maak de tekst dikker */
+}
+
+h2 {
+  margin-top: 0.5em;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 2em;
+  color: var(--color-text);
+}
+
+h3 {
+  color: var(--color-text2);
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+ 
+h4 {
+font-family: var(--font-body);
+color: var(--color-text);
+}
+
+/* Focus state algemeen*/
+a:focus,
+summary:focus,
+button:focus,
+input:focus {
+  outline-color: var(--color-button);
+}
+
+form fieldset button {
+  outline-color: #f7ce46;
+}
+
+/************/
+/* HEADER*/
+/************/
+header nav {
+  width: 100%;
+  padding: 0em 1em 0em 1em;
+  font-family: var(--heading-text);
+  position: fixed;
+  z-index: 1;
+}
+
+header nav img {
+  margin-top: 0.2em;
+  width: 1em;
+}
+
+header nav .logo {
+  margin: 0.5em;
+  width: 13em;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--gradient);
+  color: var(--color-text);
+}
+
+header nav .mainMenu{
+	margin:0em;
+	display: flex;
+	list-style: none;
+}
+
+header nav .mainMenu li a{
+	padding: 0.95em 1em 0.95em 1em;
+	display: inline-block;
+	align-items:center;
+	text-decoration: none;
+	font-size: 1.2em;
+	color:var(--color-text);
+}
+
+header nav .mainMenu li a:hover{
+	background: var(--color-button);
+	color:var(--color-footer);
+	transition: 0.2s ease-in-out;
+}
+
+header nav .mainMenu li a:active{
+	background: var(--color-active);
+}
+
+header nav .openMenu{
+	margin:20px;
+	font-size: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
+header nav .mainMenu .closeMenu{
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+
+/***********/
+/* FOOTER*/
+/***********/
+footer {
+  background-color: var(--color-footer);
+}
+
+footer section li {
+  list-style: none;
+}
+
+footer section details {
+  cursor: pointer;
+  padding: 0.5em 0em 0.5em 0em;
+  transition: 0.2s ease-in-out;
+}
+
+footer section details:hover {
+  background-color: rgb(213, 213, 213);
+  color: var(--color-button);
+}
+
+footer section details summary {
+  padding: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--heading-text);
+  font-weight: 100;
+  font-size: 1.2em;
+  text-align: left;
+  transition: 0.2s ease-in-out;
+}
+
+footer section details summary:hover {
+  text-decoration: underline;
+}
+
+footer section details summary img {
+  width: 2em;
+}
+
+footer section details a {
+  padding: 0.5em 1.2em 0.5em 1.2em;
+  display: flex;
+  font-family: var(--body-text);
+  text-decoration: underline;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+footer section details a:hover {
+  text-decoration: underline;
+  color: var(--color-button);
+}
+
+footer section:nth-of-type(2) {
+  display: flex;
+  }
+
+  footer section:nth-of-type(2) { display: flex; justify-content: space-between; /* Zorgt ervoor dat de button en de iconen aan de uiteinden staan */align-items: center; /* Zorgt ervoor dat ze verticaal uitgelijnd zijn */
+ 
+  }
+   
+  footer section:nth-of-type(2) button {
+  margin: 0; /* Verwijder standaard marges */
+   
+  }
+  /* Cookievoorkeuren button*/
+  footer section:nth-of-type(2) button {
+    display: flex; /*flexbox*/
+    justify-content: left; /*zet de icons links*/
+    list-style: none;
+  } 
+  
+  button {
+    margin-left: 1em;
+    padding: 0.5em;
+    background: none;
+    font-size: 0.8em;
+    font-family: var(--body-text);
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+  }
+  
+  button:hover {
+    font-weight: 600;
+    color: var(--color-button);
+    transform: scale(1.05);
+  }
+  
+  /* Social media buttons*/
+  footer section:nth-of-type(2) ul {
+    display: flex; /*flexbox*/
+    justify-content: right; /*zet de icons rechts*/
+    list-style: none;
+  }
+   
+  footer section:nth-of-type(2) ul li {
+    display: inline-block;
+  }
+   
+  footer section:nth-of-type(2) ul li a img {
+    width: 3em; /*grootte van de icons */
+    height: auto;
+  }
+
+/* Onderste gedeelte footer met gradient*/
+footer section:nth-of-type(3) {
+  padding: 0em 2em 0em 2em;
+  background: var(--gradient-background);
+  background: var(--gradient);
+}
+
+footer section:nth-of-type(3) p {
+  padding-bottom: 0em;
+  font-size: 0.8em;
+  padding-left: 0em;
+  padding-right: 1em;
+}
+
+footer section:nth-of-type(3) a img {
+  width: 10em;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+footer section:nth-of-type(3) section {
+  margin-top: -2em;
+  padding-top: 0em;
+  padding-bottom: 2em;
+}
+
+footer section:nth-of-type(3) section a img:first-of-type {
+  width: 8em;
+  padding-left: 0em;
+  padding-right: 1em;
+}
+
+/**********************/
+  /* Responsiveness*/
+  /**********************/
+  @media (max-width: 740px) {
+    header nav .mainMenu {
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 45vh;
+      position: fixed;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      background: rgb(232, 232, 232);
+      transition: top 1s ease;
+      display: none;
+    }
+  
+    header nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 40px;
+    }
+  
+    header nav .openMenu {
+      display: block;
+      transition: 0.2s ease-in-out;
+      margin-top: 0.4em;
+      margin-bottom: 0.4em;
+      padding: 0em;
+    }
+  
+    header nav .mainMenu li a {
+      padding: 1em;
+    }
+  
+    header nav .mainMenu li a:hover {
+      background: none;
+      color: var(--color-button);
+      transition: 0.2s ease-in-out;
+      text-decoration: underline;
+    }
+  
+    header nav .mainMenu li a:active {
+      color: var(--color-active);
+    }
+  }
